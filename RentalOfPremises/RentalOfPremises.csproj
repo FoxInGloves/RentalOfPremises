@@ -1,0 +1,86 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>WinExe</OutputType>
+        <TargetFramework>net8.0-windows</TargetFramework>
+        <Nullable>enable</Nullable>
+        <UseWPF>true</UseWPF>
+        <LangVersion>preview</LangVersion>
+        <ApplicationIcon>Resources\Images\MainIcon.ico</ApplicationIcon>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <Page Update="Views\MainViews\AboutPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Views\SecondaryViews\AddFacilityWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Views\MainViews\ClientsPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Views\MainViews\ContractsPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Views\MainViews\PremisesPage.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+      <Page Update="Views\MainViews\MainWindow.xaml">
+        <Generator>MSBuild:Compile</Generator>
+        <XamlRuntime>Wpf</XamlRuntime>
+        <SubType>Designer</SubType>
+      </Page>
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="Microsoft.Xaml.Behaviors.Wpf" Version="1.1.77" />
+      <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="8.0.0-beta.1" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Help\Help.chm" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Images\translucent-image.png" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove="Resources\Images\5635038.jpg" />
+      <None Remove="Resources\Images\4907157.jpg" />
+      <None Remove="Resources\Images\4861242.jpg" />
+      <None Remove="Resources\Images\AdditionalBackground.jpg" />
+      <Resource Include="Resources\Images\AdditionalBackground.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+      <None Remove="Resources\Images\MainBackground.jpg" />
+      <None Remove="Resources\Images\white-blank-texture-design-element.jpg" />
+      <None Remove="Resources\Images\free-icon-remove-1828851.png" />
+      <Resource Include="Resources\Images\Remove.png">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Resource Include="Resources\Images\MainBackground.jpg">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </Resource>
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Include="Resources\Help\Help.chm">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </EmbeddedResource>
+    </ItemGroup>
+
+</Project>

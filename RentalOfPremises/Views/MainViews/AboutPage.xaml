@@ -1,0 +1,35 @@
+<Page x:Class="RentalOfPremises.Views.MainViews.AboutPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      mc:Ignorable="d"
+      MinWidth="100"
+      Title="AboutPage" Height="Auto" Width="Auto">
+    <Page.Resources>
+        <Style TargetType="TextBlock">
+            <Setter Property="FontSize" Value="36"/>
+            <Setter Property="FontFamily" Value="z"/>
+        </Style>
+        
+        <Style TargetType="Button">
+            <Style.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="8"/>
+                    <Setter Property="BorderThickness" Value="0"/>
+                </Style>
+            </Style.Resources>
+            
+            <Setter Property="Background" Value="DarkTurquoise"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="80"/>
+        </Style>
+    </Page.Resources>
+    
+    <Grid>
+        <TextBlock Text="Данное приложение находится в Альфа-тестировании" Margin="10,30,10,10"/>
+        
+        <TextBlock FontSize="24" VerticalAlignment="Bottom" HorizontalAlignment="Left" 
+                   Text="(c) Parkhomenko Entertaiment, 2023. Version 2023.1A" Margin="10"/>
+    </Grid>
+</Page>
